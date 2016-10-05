@@ -107,6 +107,37 @@
                     <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <version>2.7</version>
+                <configuration>
+                    <check><branchRate>40</branchRate>
+                        <lineRate>40</lineRate>
+                        <haltOnFailure>true</haltOnFailure>
+                        <totalBranchRate>40</totalBranchRate>
+                        <totalLineRate>40</totalLineRate>
+                        <packageLineRate>40</packageLineRate>
+                        <packageBranchRate>40</packageBranchRate>
+                    </check>
+                    <formats>
+                        <format>html</format>
+                        <format>xml</format>
+                    </formats>
+                    <outputDirectory>${project.build.directory}/surefire-reports/cobertura</outputDirectory>
+                    <instrumentation>
+                        <ignoreTrivial>true</ignoreTrivial>
+                    </instrumentation>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>cobertura</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 
