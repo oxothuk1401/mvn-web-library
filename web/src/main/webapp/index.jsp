@@ -8,7 +8,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Library</title>
 <fmt:setLocale value="${sessionScope.local}" />
-<fmt:setBundle basename="by.htp.library.localization.local" var="loc" />
+<fmt:setBundle basename="localization.local" var="loc" />
 <fmt:message bundle="${loc}" key="local.login" 					var="login" />
 <fmt:message bundle="${loc}" key="local.password" 				var="password" />
 <fmt:message bundle="${loc}" key="local.library" 				var="library" />
@@ -24,7 +24,7 @@
 				 <form action="Controller"	method="post">
 					<input type="hidden" name="command" value="change-local" /> 
 					<input type="hidden" name="local" value="ru" /> 
-					<input type="image" src="/resources/rus1.jpg">
+					<input type="image" src="rus1.jpg">
 				</form>
 	</td>
 	<td align="left" width="3" height="0">
