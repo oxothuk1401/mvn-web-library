@@ -114,8 +114,9 @@ public class SQLCommandDAO implements CommonDAO {
                 resultSet = preparedStatement.executeQuery();
                 while (resultSet.next()) {
                     listUsers.add(resultSet.getString(1));
-                    connection.close();
+
                 }
+                connection.close();
             } catch (SQLException e) {
                 throw new DAOException("Error accessing database");
             }
@@ -144,6 +145,7 @@ public class SQLCommandDAO implements CommonDAO {
                     book.setLocation(resultSet.getNString(5));
                     listBooks.add(book);
                 }
+                connection.close();
             } catch (SQLException e) {
                 throw new DAOException("Error accessing database");
             }
@@ -168,6 +170,7 @@ public class SQLCommandDAO implements CommonDAO {
                         listBooks.add(new Book(resultSet.getString(3), resultSet.getString(4), resultSet.getString(5), resultSet.getString(6)));
                     }
                 }
+                connection.close();
                 if (listBooks.isEmpty()) {
                     throw new DAOException();
                 }

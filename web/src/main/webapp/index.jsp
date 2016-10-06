@@ -31,7 +31,7 @@
 				<form action="Controller" method="post">
 					<input type="hidden" name="command" value="change-local" /> 
 					<input type="hidden" name="local" value="en" /> 
-					<input type="image" src="/resources/en.jpg">
+					<input type="image" src="en.jpg">
 				</form>
 	</td>
 	</tr>

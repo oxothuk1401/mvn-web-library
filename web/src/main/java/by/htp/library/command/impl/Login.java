@@ -57,12 +57,12 @@ public class Login implements Command {
 			}
 		} catch (ServiceException e) {
 			switch (ses.getAttribute("local").toString()) {
-			case "ru": errorMessage = "Пожалуйста, введите ваш логин и пароль";break;
+			case "ru": errorMessage = "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd, \ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd \ufffd\ufffd\ufffd \ufffd\ufffd\ufffd\ufffd\ufffd \ufffd \ufffd\ufffd\ufffd\ufffd\ufffd\ufffd";break;
 			case "en": errorMessage = "Please, enter your login and password";break;
 			}
 		} catch (DAOException e) {
 			switch (ses.getAttribute("local").toString()) {
-			case "ru": errorMessage = "Логин или пароль введены не верно!";break;
+			case "ru": errorMessage = "\ufffd\ufffd\ufffd\ufffd\ufffd \ufffd\ufffd\ufffd \ufffd\ufffd\ufffd\ufffd\ufffd\ufffd \ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd \ufffd\ufffd \ufffd\ufffd\ufffd\ufffd\ufffd!";break;
 			case "en": errorMessage = "Login or password entered is not correct!";break;
 			}
 		}
