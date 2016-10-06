@@ -9,7 +9,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Admin-page</title>
 <fmt:setLocale value="${sessionScope.local}" />
-<fmt:setBundle basename="by.htp.library.localization.local" var="loc" />
+<fmt:setBundle basename="localization.local" var="loc" />
 <fmt:message bundle="${loc}" key="local.search" var="search" />
 <fmt:message bundle="${loc}" key="local.exit" var="exit" />
 <fmt:message bundle="${loc}" key="local.nameAdmin" var="nameAdmin" />

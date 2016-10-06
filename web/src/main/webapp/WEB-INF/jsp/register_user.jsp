@@ -8,7 +8,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Library</title>
 <fmt:setLocale value="${sessionScope.local}" />
-<fmt:setBundle basename="by.htp.library.localization.local" var="loc" />
+<fmt:setBundle basename="localization.local" var="loc" />
 <fmt:message bundle="${loc}" key="local.registerUserLibrary" var="registerUserLibrary" />
 <fmt:message bundle="${loc}" key="local.Phone" var="Phone" />
 <fmt:message bundle="${loc}" key="local.enterpassword" var="enterpassword" />
