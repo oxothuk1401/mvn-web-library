@@ -53,7 +53,7 @@
 				<td align="center" colspan="2">
 				<input type="submit" name="submit" value="<c:out value="${send}" />">
 				<input type="reset" name="reset" value="<c:out value="${clear}" />">
-				<input type="button" onClick='location.href="../../index.jsp"' value="<c:out value="${tomain}" />">
+				<input type="button" a href="index.jsp" value="<c:out value="${tomain}" />">
 				</td>
 				</tr>
 				</table>

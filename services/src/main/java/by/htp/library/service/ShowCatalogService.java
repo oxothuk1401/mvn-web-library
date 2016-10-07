@@ -8,7 +8,7 @@ import by.htp.library.entity.Book;
 
 public final class ShowCatalogService {
 
-    public final static List<Book> showBooks(String showusers) throws DAOException {
+    public final static List<Book> showBooks() throws DAOException {
         Factory factory = Factory.getInstance();
         SQLCommandDAO sqlCommandDAO = factory.getSqlCommandDAO();
         return sqlCommandDAO.getBooks();
